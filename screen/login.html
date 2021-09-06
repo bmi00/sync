@@ -1,0 +1,30 @@
+
+<div  class="row g-3">
+<form class="row g-3" id="signUp" >
+    
+    <div class="col-12">
+        <label for="mail" class="form-label">mail or mobile no.</label>
+      <input type="test"  name="username" ng-model = "formAdata.cred" class="form-control" id="mail">    
+    </div>
+    
+    <div class="col-md-12">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" name="password" ng-model = "formAdata.password" class="form-control" id="password" required>
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-lg btn-primary d-inline-flex" value="submit" ng-click="submit()">login</button>
+      </div>
+    
+
+  </form>
+
+  <div class="col-12">
+    <div class="col-12">
+      <a href="#/register">
+    <button class="btn btn-lg btn-primary d-inline-flex">Register</button>
+      </a>
+  </div>
+  </div>
+
+</div>
