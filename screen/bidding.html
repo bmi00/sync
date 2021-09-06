@@ -1,0 +1,111 @@
+<div class="container-fluid">
+  <h3 id="timer" ng-model="timer"></h3>
+</div>
+
+  <div id="bidding"  ng-controller = "biddingController">
+
+  <div class="card mb-3  shadow-lg p-3 mb-5 bg-light rounded" style="max-width: 540px;" id="playerCard">
+    <div class="card-header fw-bold">  {{ playerData.name }}</div>
+    
+    <div class="row g-0" ng-moel="usernameForm">
+      <div class="col-md-4">
+        <img ng-src="{{ playerData.image }}" class="img-fluid rounded-start" alt="inr">
+      <hr>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-text"><small class="text-muted" >{{ playerData.role }}</small></p>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Net Worth</h6>
+              </div>
+              <span class="text-muted">{{ playerData.finalVal }}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">WF</h6>
+                <small class="text-muted">Winning factor</small>
+              </div>
+              <span class="text-muted">{{ playerData.score }} </span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Holder</h6>
+                <small class="text-muted">Highest bidder for this player</small>
+              </div>
+              <span class="text-muted">{{ playerData.teamId }}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Available Credits</h6>
+                <small>for your team</small>
+              </div>
+              <span class="text-success">{{ team.balAmount }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="position-absolute bottom-30 start-50 translate-middle-x">
+    <button type="button" class="btn btn-primary btn-lg shadow-lg" id="raiseBid" type="submit" value="submit" ng-click="bidOnPlayer()">Raise</button>
+      </div>
+    
+
+</div>
+
+
+<div id="card mb-3  shadow-lg p-3 mb-5 bg-light rounded">
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Players</th>
+        <th scope="col"></th>
+        <th scope="col">Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>BatsMan</td>
+        <td></td>
+        <td>{{ simulate.sCount }}</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>AllRounder</td>
+        <td></td>
+        <td>{{ simulate.aCount }}</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Bowler</td>
+        <td></td>
+        <td>{{ simulate.bCount }}</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Wicket keeper</td>
+        <td></td>
+        <td>{{ simulate.wCount }}</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Captain</td>
+        <td></td>
+        <td>{{ simulate.cCount }}</td>
+      </tr>
+      <tr>
+        <td colspan="2">Larry the Bird</td>
+        <td>{{ simulate.WP }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
