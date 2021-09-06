@@ -1,0 +1,42 @@
+<form class="row g-3" id="signUp">
+    <div class="col-md-6">
+      <label for="firstName" class="form-label">First Name</label>
+      <input type="text" name="firstName" ng-model = "formAdata.firstName" class="form-control" id="firstName" required>
+    </div>
+    
+    <div class="col-md-6">
+      <label for="lastName" class="form-label">Last Name</label>
+      <input type="text"  name="lastName" ng-model = "formAdata.secondName"  class="form-control" id="lastName">
+    </div>
+    
+    <div class="col-12">
+        <label for="mail" class="form-label">mailId</label>
+      <input type="mail"  name="mail" ng-model = "formAdata.mail" class="form-control" id="mail">    
+    </div>
+    
+    <div class="col-12">
+      <label for="studNumber" class="form-label">Contact Number</label>
+      <input type="tel" name="studNumber" ng-model = "formAdata.studNumber" class="form-control" id="studNumber"  required>
+    </div>
+    
+    <div class="col-12">
+      <label for="parentNumber" class="form-label">Parent Number</label>
+      <input type="tel" name="parentNumber" ng-model = "formAdata.parentNumber" class="form-control" id="parentNumber"  required>
+    </div>
+    
+    <div class="col-md-6">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" name="password" ng-model = "formAdata.password" class="form-control" id="password" required>
+    </div>
+
+
+    <div class="col-md-4">
+      <label for="dob" class="form-label">Date Of Birth</label>
+      <input type="date" name="dob" class="form-control" ng-model = "formAdata.dob" id="dob" required>
+    </div>
+    
+   
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" value="Submit" ng-click="submit()">Register</button>
+    </div>
+  </form>

@@ -1,0 +1,26 @@
+<div class="container-fluid">
+
+    <div id="table">
+
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Team</th>
+                <th scope="col">Status</th>
+                <th scope="col">Score</th>
+                <th scope="col">Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="result in simulate">
+                 <td>{{ result.teamId }}</td>
+                <td>{{ result.WP }}</td>
+                <td>{{ result.WS }}</td>
+                <td>{{ result.balAmt }}</td>
+              </tr>
+            </tbody>
+          </table>
+
+    </div>
+
+</div>
