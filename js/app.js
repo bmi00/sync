@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 
-var baseurl = 'http://localhost:8080/';
+var baseurl = 'https://javaclusters-49216-0.cloudclusters.net/Syncro-1.0/';
 
 
 
